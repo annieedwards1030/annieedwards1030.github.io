@@ -1,3 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+
+ .col-group {
+    overflow: hidden;
+  }
+  .col-group > div {
+    float: left;
+    width: 30%;
+  }
+
+}
 
 * {
   margin: 0;
@@ -33,43 +47,4 @@
 .top-menu a:hover {
   border-bottom: 4px solid orange;
 }
-.social-media-links {
-  margin: 5%;
-  display: flex;
-}
-.social-media-links p {
-  margin: 10px;
-}
-.social-media-links a {
-  padding: 10px;
-  text-decoration: none;
-  background: red;
-  border-radius: 5px;
-  color: #fff;
-}
-.social-media-links a:hover {
-  box-shadow: 0 0 5px black;
-}
 
-/*  For Mobile Screens  */
-
-@media screen and (max-width: 700px) {
-  .topnav {
-    display: block;
-    text-align: center;
-    height: auto;
-  }
-  .top-menu {
-    display: block;
-    padding: 20px;
-  }
-  .top-menu p {
-    padding: 10px;
-  }
-  .social-media-links{
-    display: block;
-  }
-  .social-media-links p{
-    margin: 30px;
-  }
-}
