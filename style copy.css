@@ -1,19 +1,4 @@
 * {
-  box-sizing: border-box;
-}
-
-
- .col-group {
-    overflow: hidden;
-  }
-  .col-group > div {
-    float: left;
-    width: 30%;
-  }
-
-}
-
-* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -29,7 +14,6 @@
 }
 .branding p {
   color: #fff;
-  font-family: fantasy;
   font-size: 30px;
   letter-spacing: 1px;
 }
@@ -47,4 +31,112 @@
 .top-menu a:hover {
   border-bottom: 4px solid orange;
 }
+
+.mySlides {
+  display:none;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+h2 {
+  text-align:center;
+}
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+#slideshow {
+  padding:20px;
+  text-align:center;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.btn {
+  background-color: #cdcdcd;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  transition: all 200ms ease-in-out;
+  margin-left:400px;
+}
+.card > .button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: white;
+  background-color: green;
+  text-align: center;
+  cursor: pointer;
+  text-decoration:none;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.button {
+  text-align:center;
+}
+
+h3 {
+  font-weight:bold;
+  font-size:20px;
+}
+
+
+.card > p{
+  font-size:12px;
+}
+
+.captions > p {
+  postion:top;
+}
+
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
 
