@@ -1,51 +1,20 @@
 
-var images = ["the-featured-snippet-banner-1.png", "SEO-banner.jpg", "templates.png"];
-var currentPosition = 0;
+var slideIndex = 1;
+showDivs(slideIndex);
 
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
 
-
-
-
-
-$("#next").on("click", function(){
-
-  $("#prev").attr("disabled", false);
-
-  currentPosition += 1;
-
-  if(currentPosition == images.length-1){
-    // We are at the end
-    $(this).attr("disabled", true);
-  } else {
-    // We haven't reached the end yet
-    console.log(images[currentPosition]);
-    $(this).attr("disabled", false);
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
   }
-   $("#slide-show").attr("src","images/" +images [currentPosition]);
-});
-
-
-$("#prev").on("click", function(){
-
-  $("#next").attr("disabled", false);
-
-  currentPosition -= 1;
-
-  if(currentPosition == 0){
-    // We are at the start
-    console.log(images[currentPosition]);
-
-    $(this).attr("disabled", true);
-
-  } else {
-    // We haven't reached the start yet
-    console.log(images[currentPosition]);
-    $(this).attr("disabled", false);
-  }
-  $("#slide-show").attr("src","images/" +images[currentPosition]);
- 
-});
-
- 
+  x[slideIndex-1].style.display = "block";  
+} 
 
   
