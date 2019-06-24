@@ -1,27 +1,75 @@
-/*------ PART 1 -------------------------*/
-/* 1. Change the background-color for the body to #1695A3 */
-.slideshow2{
-	background-color:blue;
-	color:white;
-	font-size:36px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-/* 2. Change the text color for the body to #FFFFFF */
 
+.topnav {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #222;
+}
+.branding p {
+  color: #fff;
+  font-family: fantasy;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+.top-menu {
+  display: flex;
+}
+.top-menu a {
+  margin: 0 10px;
+  padding: 10px;
+  text-decoration: none;
+  font-family: sans-serif;
+  color: #fff;
+  font-size: 20px;
+}
+.top-menu a:hover {
+  border-bottom: 4px solid orange;
+}
+.social-media-links {
+  margin: 5%;
+  display: flex;
+}
+.social-media-links p {
+  margin: 10px;
+}
+.social-media-links a {
+  padding: 10px;
+  text-decoration: none;
+  background: red;
+  border-radius: 5px;
+  color: #fff;
+}
+.social-media-links a:hover {
+  box-shadow: 0 0 5px black;
+}
 
-/* 3. Change the text color for the paragraph element to #EB7F00 */
+/*  For Mobile Screens  */
 
-
-
-/*------ PART 2 -------------------------*/
-/*1. Center the h3 */
-
-
-/*2. Change the font-size of the paragraph element to 40px and the font-weight to bold */
-
-
-/*3. Change the text color for the paragraph element to #EB7F00 */
-
-
-/*4. Remove the default underline from the anchor tag below*/
-
-
+@media screen and (max-width: 700px) {
+  .topnav {
+    display: block;
+    text-align: center;
+    height: auto;
+  }
+  .top-menu {
+    display: block;
+    padding: 20px;
+  }
+  .top-menu p {
+    padding: 10px;
+  }
+  .social-media-links{
+    display: block;
+  }
+  .social-media-links p{
+    margin: 30px;
+  }
+}
