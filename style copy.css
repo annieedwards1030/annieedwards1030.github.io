@@ -1,22 +1,13 @@
-
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   padding: 50px;
   margin: 0;
 
-}
-.captions > p {
-  position:absolute;
-  top: 40%;
-  border-style: 3px solid black;
-  background: white;
-  padding:10px;
-  margin:5px;
 }
 
 .topnav {
@@ -32,7 +23,6 @@ body {
   font-size: 30px;
   letter-spacing: 1px;
 }
-
 .top-menu {
   display: flex;
 }
@@ -48,25 +38,30 @@ body {
   border-bottom: 4px solid orange;
 }
 
-.mySlides {
-  display:none;
-}
 h1{
   text-align:center;
-  font-size:30px;
-  }
 
+}
 h2 {
-  text-align:center;
-}
-
-
-h3 {
   font-weight:bold;
-  font-size:30px;
+  text-decoration:underline;
+  margin-left:30px;
+}
+h3 {
   text-align:center;
 }
-
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  margin-left:80px;
+  color: white;
+  background-color: green;
+  text-align: center;
+  cursor: pointer;
+  text-decoration:none;
+}
 /* Float four columns side by side */
 .column {
   float: left;
@@ -78,6 +73,7 @@ h3 {
   outline: 0;
   display: inline-block;
   padding: 10px 25px;
+  margin-left:15px;
   color: white;
   background-color: green;
   text-align: center;
@@ -106,63 +102,14 @@ h3 {
 /* Style the counter cards */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
+  padding: 30px;
   text-align: center;
   background-color: #f1f1f1;
+  height:200px;
+  margin:20px;
 }
-#slideshow {
-  padding:20px;
+
+.blue > p {
   text-align:center;
+  font-weight:bold;
 }
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-.btn {
-  background-color: #cdcdcd;
-  padding: 6px 12px;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1.5;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  outline: none;
-  transition: all 200ms ease-in-out;
-  margin-left:400px;
-}
-.column1{
-  float: left;
-  width: 25%;
-  padding: 10px;
- border: solid 3px grey;
-}
-.button2 {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 10px;
-  margin-left:110px;
-  color: white;
-  background-color: green;
-  text-align: center;
-  cursor: pointer;
-  text-decoration:none;
-}
-
-
-
-
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-
