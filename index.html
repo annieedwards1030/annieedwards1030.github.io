@@ -55,12 +55,14 @@
         <p>Templates</p>
       </div>
     </div>
+  </div>
     
-    <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
+    <div class="w3-container w3-dark-grey w3-padding w3-large" style="margin-left:15px; margin-right:15px;">
       <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
       <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
   </div>
-  
+</div>
+
   
 
 
@@ -171,14 +173,36 @@
   </div>
 </div>
 
+<script>
+  var slideIndex = 1;
+showDivs(slideIndex);
 
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+      $(function() {
+        $(".navigation__icon").click(function() {
+          $(".navigation").toggleClass('navigation-open');
+        });
+      });
+    </script>
 <!-- Footer -->
 
 <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
   <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
 </footer>
-<script src="js/jquery-1.11.2.min.js"></script>
-    <script src="js /main.js"></script>
+
 
 </body>
 </html>
