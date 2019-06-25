@@ -26,6 +26,22 @@ body {
 .top-menu {
   display: flex;
 }
+.captions > p {
+  position:absolute;
+  top: 40%;
+  border-style: 3px solid white;
+  background: white;
+  padding:10px;
+  margin:5px;
+}
+#buttons-wrapper {
+  margin: 0 auto;
+  width: 400px;
+  display: block;
+  margin-top:20px;
+  background-color:grey;
+}
+
 .top-menu a {
   margin: 0 10px;
   padding: 10px;
@@ -38,30 +54,25 @@ body {
   border-bottom: 4px solid orange;
 }
 
+.mySlides {
+  display:none;
+}
 h1{
   text-align:center;
+  font-size:30px;
+  }
 
-}
 h2 {
-  font-weight:bold;
-  text-decoration:underline;
-  margin-left:30px;
-}
-h3 {
   text-align:center;
 }
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 10px 25px;
-  margin-left:80px;
-  color: white;
-  background-color: green;
-  text-align: center;
-  cursor: pointer;
-  text-decoration:none;
+
+
+h3 {
+  font-weight:bold;
+  font-size:30px;
+  text-align:center;
 }
+
 /* Float four columns side by side */
 .column {
   float: left;
@@ -73,7 +84,6 @@ h3 {
   outline: 0;
   display: inline-block;
   padding: 10px 25px;
-  margin-left:15px;
   color: white;
   background-color: green;
   text-align: center;
@@ -102,14 +112,26 @@ h3 {
 /* Style the counter cards */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 30px;
+  padding: 16px;
   text-align: center;
   background-color: #f1f1f1;
-  height:200px;
-  margin:20px;
+}
+#slideshow {
+  padding:20px;
+  text-align:center;
 }
 
-.blue > p {
-  text-align:center;
-  font-weight:bold;
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
