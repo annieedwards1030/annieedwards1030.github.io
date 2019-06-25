@@ -10,6 +10,14 @@ body {
   margin: 0;
 
 }
+.captions > p {
+  position:absolute;
+  top: 40%;
+  border-style: 3px solid black;
+  background: white;
+  padding:10px;
+  margin:5px;
+}
 
 .topnav {
   height: 70px;
